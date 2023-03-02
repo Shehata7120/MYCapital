@@ -15,10 +15,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-            InstitutionTypeSeeder::class;
+
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            InstitutionTypeSeeder::class,
+            InstitutionSeeder::class,
+
+            // InstitutionSeeder::class,
+            // InstitutionTypeSeeder::class,
+        ]);
+
     }
 }
