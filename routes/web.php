@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\admin\InstitutionController;
+use App\Http\Controllers\InstitutionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::resource('institutions', InstitutionController::class)->names('institutions');

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string("url")->nullable();
             $table->string('address');
             $table->string('email')->nullable();
-            $table->string("map");
+            $table->string("map")->nullable();
             $table->string("phone");
             $table->timestamps();
         });

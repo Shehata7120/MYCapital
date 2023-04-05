@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //login route for AuthController authentication using sanctum package
-Route::post('/login', [AuthController::class, 'login']);
+//Route::post('/login', [AuthController::class, 'login']);
 
 
 Route::apiResource('institutions', InstitutionsController::class);
